@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ARRAY</title>
+    <link rel="stylesheet" href="array.css" />
+  </head>
+  <body>
+    <p>
+      <script>
+        console.log(" Display in the console the numbers from 1 to 20: ");
+        for (var i = 1; i <= 20; i++) {
+          document.write(i + " ");
+          console.log(i + " ");
+        }
+      </script>
+    </p>
+
+    <br />
+
+    <p>
+      Display in the console the odd numbers from 1 to 20:
+      <script>
+        console.log(" Display in the console the odd from 1 to 20: ");
+        for (var i = 1; i <= 20; i = i + 2) {
+          document.write(i + " ");
+          console.log(i + " ");
+        }
+      </script>
+    </p>
+
+    <br />
+
+    <p>
+      Compute the sum of the elements of an array and display it in the console:
+      <script>
+        const array = [11, 222, 4, 9, 2, 5];
+        let sum = 0;
+
+        for (let i = 0; i < array.length; i++) {
+          sum += array[i];
+        }
+        document.write(sum);
+        console.log(
+          "Compute the sum of the elements of an array and display it in the console:" +
+            sum
+        );
+      </script>
+    </p>
+
+    <br />
+
+    <p>
+      Compute the maximum of the elements of an array and display it in the
+      console:
+      <script>
+        const arr = [11, 222, 4, 9, 2, 5];
+        let max = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > max) {
+            max = arr[i];
+          }
+        }
+        document.write(max);
+        console.log(
+          "Compute the maximum of the elements of an array and display it in the console:" +
+            max
+        );
+      </script>
+    </p>
+    <br />
+
+    <p>
+      Compute how many times a certain element appears in an array:
+      <script>
+        const arr = [2, 33, 22, 53, 8533, 222, 423];
+        var aux;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === "2") {
+            aux++;
+          }
+        }
+        document.write(aux);
+      </script>
+    </p>
+    <br />
+
+    <p>
+      Challenge:
+      <script>
+        for (i = 0; i < 1; i++) {
+          for (j = 1; j > 0; j--) {
+            document.write(i + " " + j + " " + i + "  " + j + " | ");
+          }
+        }
+      </script>
+    </p>
+  </body>
+</html>

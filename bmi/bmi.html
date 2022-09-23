@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS BMI</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+
+  <body>
+    <div>
+      <ul>
+        <li class="vl">Name: John Doe</li>
+        <li class="vl">Age: 34</li>
+        <li class="vl">
+          BMI:
+          <script>
+            var weight1 = 73.4;
+            var height1 = 1.75;
+            var bmi1;
+            bmi1 = weight1 / (height1 * height1);
+            document.write(bmi1);
+          </script>
+        </li>
+        <li class="vl">
+          <script>
+            if (bmi1 < 18.5) {
+              document.write("Underweight");
+            } else if (bmi1 >= 18.5 && bmi1 <= 25) {
+              document.write("Normal");
+            } else if (bmi1 > 25 && bmi1 < 30) {
+              document.write("Overweight");
+            } else document.write("Obese");
+          </script>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div>
+      <ul>
+        <li class="vl">Name: Jane Doe</li>
+        <li class="vl">Age: 25</li>
+        <li class="vl">
+          BMI:
+          <script>
+            var weight2 = 72;
+            var height2 = 1.55;
+            var bmi2;
+            bmi2 = weight2 / (height2 * height2);
+            document.write(bmi2);
+          </script>
+        </li>
+        <li class="vl">
+          <script>
+            if (bmi2 < 18.5) {
+              document.write("Underweight");
+            } else if (bmi2 >= 18.5 && bmi2 <= 25) {
+              document.write("Normal");
+            } else if (bmi2 > 25 && bmi2 < 30) {
+              document.write("Overweight");
+            } else document.write("Obese");
+          </script>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
